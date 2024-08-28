@@ -1,6 +1,6 @@
 [
   {
-    "file": "experiments/drone-show.js",
+    "file": "experiments/drone-show.json",
     "name": "Drone show",
     "description": "The project will present a sequence of rotating circles to create different forms, simulating a drone light show. The images observed from the ground in drone light shows serve as inspiration. This will be done by using JavaScript and the p5.js package to create dynamic and generative art. To create a changing visual experience, I should play with grid layout, rotation, and animation using the code."
   }
