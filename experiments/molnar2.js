@@ -12,13 +12,16 @@ function getRandomValue(pos, variance) {
   return pos + map(Math.random(), 0, 1, -variance, variance);
 }
 
-
+function shapeColor () {
+  return color(random(255), random(255), random(255), random(255));
+}
 
 function drawLayers(x, y, size, layers) {
   //const half = size / 2;
   // const variance = size / 20;
-  noFill();
+  // noFill();
   // rectMode(CENTER);
+
   for (let i = 0; i < layers; i++) {
     if (Math.random() > 0.5) {
       continue;
@@ -26,6 +29,8 @@ function drawLayers(x, y, size, layers) {
     const s = (size / layers) * (layers - i);
     const half = s / 2;
     const variance = half / 10;
+
+    fill(shapeColor());
 
     beginShape();
     vertex(
