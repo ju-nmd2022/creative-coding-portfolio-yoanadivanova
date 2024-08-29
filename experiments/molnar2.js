@@ -13,7 +13,7 @@ function getRandomValue(pos, variance) {
 }
 
 function shapeColor () {
-  return color(random(255), random(255), random(255), random(255));
+  return color(random(100, 255), random(100, 255), random(100, 255), random(255));
 }
 
 function drawLayers(x, y, size, layers) {
