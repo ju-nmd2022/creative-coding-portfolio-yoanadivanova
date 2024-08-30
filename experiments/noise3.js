@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(1000, 1000);
-  frameRate(7);
+  frameRate(10);
 }
 
 const size = 10;
@@ -28,7 +28,7 @@ function draw() {
     }
   }
 
-  counter += 1;
+  counter += 0.1;
 
   //noLoop();
 }
