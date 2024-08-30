@@ -1,37 +1,43 @@
   [
     {
       "file": "experiments/example.js",
-      "name": "Name of your experiment",
+      "name": "Example experiment",
       "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
     },
 
       {
         "file": "experiments/molnar.js",
-        "name": "Name of your experiment",
+        "name": "Molnar recreation",
         "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
       }, 
 
       {
         "file": "experiments/molnar2.js",
-        "name": "Name of your experiment",
+        "name": "Molnar2",
         "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
       }, 
 
       {
         "file": "experiments/molnar3.js",
-        "name": "Name of your experiment",
+        "name": "Molnar3",
         "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
       }, 
 
       {
         "file": "experiments/noise.js",
-        "name": "Name of your experiment",
+        "name": "Noise recreation",
         "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
       },
 
       {
         "file": "experiments/noise2.js",
-        "name": "Name of your experiment",
+        "name": "Noise2",
+        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+      },
+
+      {
+        "file": "experiments/noise3.js",
+        "name": "Noise3",
         "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
       },
 
