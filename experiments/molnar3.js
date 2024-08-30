@@ -1,19 +1,15 @@
 function setup() {
   createCanvas(1000, 1000);
-  frameRate(1);
+  frameRate(5);
 }
 
 const size = 100;
-const layers = 25;
+const layers = 10;
 
 let counter = 0;
 
 function getRandomValue(pos, variance) {
   return pos + map(Math.random(), 0, 1, -variance, variance);
-}
-
-function shapeColor () {
-  return color(random(100, 255), random(100, 255), random(100, 255), random(255));
 }
 
 
@@ -31,7 +27,8 @@ function drawLayers(x, y, size, layers) {
     const half = s / 2;
     const variance = half / 10;
 
-    fill(shapeColor());
+    fill(200, 0, 200);
+    //noStroke();
 
     beginShape();
     vertex(
@@ -63,12 +60,11 @@ function draw() {
     for (let x = 0; x < 10; x++) {
       const padding = 5;
       drawLayers(size / 2 + x * size, size / 2 + y * size, size - padding, layers);
+      
     }
   }
 
   counter += 0.1;
-
-  noLoop();
 }
 
 
