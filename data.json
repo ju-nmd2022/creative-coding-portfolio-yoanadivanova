@@ -5,6 +5,18 @@
       "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
     },
 
+    {
+      "file": "experiments/example2.js",
+      "name": "Example experiment",
+      "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    },
+
+    {
+      "file": "experiments/example3.js",
+      "name": "Example experiment",
+      "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    },
+
       {
         "file": "experiments/molnar.js",
         "name": "Molnar recreation",
