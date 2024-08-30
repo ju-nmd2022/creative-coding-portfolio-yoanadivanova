@@ -3,24 +3,24 @@ function setup() {
 }
 
 const size = 100;
-const layers = 10;
+const layers = 25;
 
 function getRandomValue(pos, variance) {
   return pos + map(Math.random(), 0, 1, -variance, variance);
 }
 
 function drawLayers(x, y, size, layers) {
-  const half = size / 2;
+  //const half = size / 2;
   // const variance = size / 20;
   noFill();
   // rectMode(CENTER);
   for (let i = 0; i < layers; i++) {
-    if (Math.random() > 0.8) {
+    if (Math.random() > 0.5) {
       continue;
     }
     const s = (size / layers) * (layers - i);
     const half = s / 2;
-    const variance = half / 20;
+    const variance = half / 10;
 
     beginShape();
     vertex(
@@ -50,7 +50,8 @@ function draw() {
   // drawLayers(100, 100, size, layers);
   for (let y = 0; y < 10; y++) {
     for (let x = 0; x < 10; x++) {
-      drawLayers(size / 2 + x * size, size / 2 + y * size, size, layers);
+      const padding = 5;
+      drawLayers(size / 2 + x * size, size / 2 + y * size, size - padding, layers);
     }
   }
 

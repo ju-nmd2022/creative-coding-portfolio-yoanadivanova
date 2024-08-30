@@ -16,6 +16,7 @@ function shapeColor () {
   return color(random(100, 255), random(100, 255), random(100, 255), random(255));
 }
 
+
 function drawLayers(x, y, size, layers) {
   //const half = size / 2;
   // const variance = size / 20;
@@ -67,5 +68,8 @@ function draw() {
 
   counter += 0.1;
 
-  //noLoop();
+  noLoop();
 }
+
+
+//Make squers transform to circles
