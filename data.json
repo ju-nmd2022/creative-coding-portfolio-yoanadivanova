@@ -1,4 +1,28 @@
-[
+  [
+    {
+      "file": "experiments/example.js",
+      "name": "Name of your experiment",
+      "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    },
+
+      {
+        "file": "experiments/molnar.js",
+        "name": "Name of your experiment",
+        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+      }, 
+
+      {
+        "file": "experiments/molnar2.js",
+        "name": "Name of your experiment",
+        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+      }, 
+
+      {
+        "file": "experiments/molnar3.js",
+        "name": "Name of your experiment",
+        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+      }, 
+
   {
     "file": "experiments/drone-show.js",
     "name": "Drone show",
