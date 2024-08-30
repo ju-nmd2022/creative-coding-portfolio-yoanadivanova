@@ -7,8 +7,8 @@ function shapeColor () {
   return color(random(100, 255), random(100, 255), random(100, 255), random(100,255));
 }
 
-function getRandomDiameter(minSize, maxSize) {
-  return random(20, 100); 
+function getRandomDiameter(20, 100) {
+  return random(); 
 }
 
 function draw() {

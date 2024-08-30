@@ -2,55 +2,55 @@
     {
       "file": "experiments/example.js",
       "name": "Example experiment",
-      "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+      "description": "This is the given example."
     },
 
     {
       "file": "experiments/example2.js",
-      "name": "Example experiment",
-      "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+      "name": "Example2",
+      "description": "This variation includes a random color and a random diameter between 20 and 100."
     },
 
     {
       "file": "experiments/example3.js",
-      "name": "Example experiment",
-      "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+      "name": "Example3",
+      "description": "This example have four circles with sertain colors but it makes the diameter grow and then decrese between 10 and 70."
     },
 
       {
         "file": "experiments/molnar.js",
         "name": "Molnar recreation",
-        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+        "description": "This is a recreation of the molar example but I made it that the shape is smaller as the 'i' increases; the variance is also calculated based on the half of the size of each shape."
       }, 
-
+      
       {
         "file": "experiments/molnar2.js",
-        "name": "Molnar2",
-        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+        "name": "Molnar3",
+        "description": "In this variation I used random for the colors of each layer of the shape."
       }, 
 
       {
         "file": "experiments/molnar3.js",
-        "name": "Molnar3",
-        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+        "name": "Molnar2",
+        "description": "This variation gives a purple color to the shapes and encludes a loop that creates an animation."
       }, 
 
       {
         "file": "experiments/noise.js",
         "name": "Noise recreation",
-        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+        "description": "This is a recreation of the noise example from the lecture."
       },
 
       {
         "file": "experiments/noise2.js",
         "name": "Noise2",
-        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+        "description": "In this variation the color is set to red and there is a loop that creates an animation."
       },
 
       {
         "file": "experiments/noise3.js",
         "name": "Noise3",
-        "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+        "description": "In this variation a random color is included to each dot."
       },
 
   {
