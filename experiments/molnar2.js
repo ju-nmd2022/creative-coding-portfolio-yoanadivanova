@@ -31,6 +31,7 @@ function drawLayers(x, y, size, layers) {
     const variance = half / 10;
 
     fill(shapeColor());
+    noStroke();
 
     beginShape();
     vertex(
