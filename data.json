@@ -29,12 +29,6 @@
         "name": "Molnar recreation",
         "description": "This is a recreation of the molar example but I made it that the shape is smaller as the 'i' increases; the variance is also calculated based on the half of the size of each shape."
       }, 
-      
-      {
-        "file": "experiments/molnar2.js",
-        "name": "Molnar3",
-        "description": "In this variation I used random for the colors of each layer of the shape."
-      }, 
 
       {
         "file": "experiments/molnar3.js",
@@ -42,6 +36,12 @@
         "description": "This variation gives a purple color to the shapes and encludes a loop that creates an animation."
       }, 
 
+      {
+        "file": "experiments/molnar2.js",
+        "name": "Molnar3",
+        "description": "In this variation I used random for the colors of each layer of the shape."
+      }, 
+      
       {
         "file": "experiments/molnar4.js",
         "name": "Molnar4",
@@ -68,7 +68,7 @@
 
       {
         "file": "experiments/noise4.js",
-        "name": "Noise3",
+        "name": "Noise4",
         "description": "In this variation there is an if statment checking if a random number is greater or lower then 0.5. In on case it draws an elipse with a random color and in the other it draws a black rectangle."
       },
 
