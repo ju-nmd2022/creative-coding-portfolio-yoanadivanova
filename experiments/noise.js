@@ -1,16 +1,16 @@
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(1000, 1000);
 }
 
-const size = 10;
-const divider = 20;
-const numRows = 60;
-const numCols = 60;
+const size = 5;
+const divider = 5;
+const numRows = 200;
+const numCols = 200;
 
 function draw() {
-  background(255, 255, 255);
+  background(0);
   noStroke();
-  fill(0, 0, 0);
+  fill(255);
 
   // noiseSeed(0);
   for (let y = 0; y < numRows; y++) {

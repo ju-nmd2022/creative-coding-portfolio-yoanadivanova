@@ -14,8 +14,15 @@
     {
       "file": "experiments/example3.js",
       "name": "Example3",
-      "description": "This example have four circles with sertain colors but it makes the diameter grow and then decrese between 10 and 70."
+      "description": "This example have four circles with certain colors but it makes the diameter grow and then decrese between 10 and 70."
     },
+
+    {
+      "file": "experiments/example4.js",
+      "name": "Example4",
+      "description": "This example have four circles with random colors but it makes the diameter grow and then decrese between 10 and 70. It also gives a random rotation direction to the elipses. It checks with an if statement if a random number is larger or smaller than 0.5, which is 50%/ 50% chance, and gives it a value of 1 or -1. Then when drawing the elipse, in the rotation I multiply this number by 'frameCount' and that is how I get the direction."
+    },
+
 
       {
         "file": "experiments/molnar.js",
@@ -33,6 +40,12 @@
         "file": "experiments/molnar3.js",
         "name": "Molnar2",
         "description": "This variation gives a purple color to the shapes and encludes a loop that creates an animation."
+      }, 
+
+      {
+        "file": "experiments/molnar4.js",
+        "name": "Molnar4",
+        "description": "This variation checks if a row in the grid is an even or an odd number and gives different values to the shapes depending on that."
       }, 
 
       {
