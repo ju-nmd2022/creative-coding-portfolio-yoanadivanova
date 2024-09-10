@@ -8,6 +8,8 @@ let defaultAngle;
 let stepLength = 5;
 let numSteps = 5;
 let x, y;
+let spacePressed = false;
+//let synth;
 
 function setup() {
   createCanvas(650, 650); 
@@ -40,6 +42,8 @@ function setup() {
 
   x = 100;
   y = 100;
+
+  //synth = new Tone.Synth().toDestination();
 }
 
 function draw() {
@@ -47,7 +51,11 @@ function draw() {
   background(255, 10);
   
   strokeWeight(random(0, 10)); 
-  stroke(random(255), random(255), random(255));
+  if (spacePressed) {
+    stroke(0); 
+  } else {
+    stroke(random(255), random(255), random(255));
+  }
 
   for (let i = 0; i < 5; i++) {  
     let x = random(width);
@@ -81,11 +89,13 @@ function draw() {
 
 function keyPressed() {
   if (key === ' ') {
-    stroke(255);
+    spacePressed = true;
+    synth.triggerAttackRelease("C4", "2n"); 
   }
 }
 
 function keyReleased() {
   if (key === ' ') {
-    stroke(random(255), random(255), random(255));
-  }}
+    spacePressed = false;
+  }
+}

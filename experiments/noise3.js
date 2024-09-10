@@ -24,7 +24,7 @@ function draw() {
       noStroke();
       fill(shapeColor());
       const value = noise(x / divider, y / divider, counter) * size;
-      ellipse(size / 2 + x * size, size / 2 + y * size, value);
+      ellipse(size + x * size, size + y * size, value);
     }
   }
 

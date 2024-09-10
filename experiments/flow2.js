@@ -50,7 +50,7 @@ class Agent {
   draw() {
     push();
     stroke(random(255), random(255), random(255));
-    strokeWeight(1);
+    strokeWeight(random(1, 5));
     line(
       this.lastPosition.x,
       this.lastPosition.y,
@@ -86,8 +86,8 @@ function generateAgents() {
     let agent = new Agent(
       Math.random() * innerWidth,
       Math.random() * innerHeight,
-      0.5,
-      0.05
+      1,
+      6
     );
     agents.push(agent);
   }

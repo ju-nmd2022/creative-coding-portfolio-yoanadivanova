@@ -51,16 +51,19 @@ function draw() {
   for (let y = 0; y < 10; y++) {
     for (let x = 0; x < 10; x++) {
       const padding = 5;
-      drawLayers(size / 2 + x * size, size / 2 + y * size, size - padding, layers);
-    }
-    //this is the website where I found how to check if the number is even
+
+      //this is the website where I found how to check if the number is even
       //https://www.geeksforgeeks.org/javascript-program-to-check-if-a-number-is-odd-or-even/ 
       if (y % 2 == 0) {
-        fill(shapeColor);
-      }else {
-        fill(255);
+        drawLayers(size / 2 + x * size, size / 2 + y * size, size - padding, layers);
+        
+      } else {
+        drawLayers(size * 2.75 + x * size / 2, size * 2  + y * size / 2, size / 2 - padding * 3, layers * 2);
       }
+      
+    }
+    
   }
 
-  //noLoop();
+  noLoop();
 }

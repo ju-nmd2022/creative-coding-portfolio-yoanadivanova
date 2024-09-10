@@ -72,6 +72,25 @@
         "description": "In this variation there is an if statment checking if a random number is greater or lower then 0.5. In on case it draws an elipse with a random color and in the other it draws a black rectangle."
       },
 
+      {
+        "file": "experiments/flow.js",
+        "name": "Flow",
+        "description": "Press the SPACE button. This is a recreation of the flow fields art. In my variation the speed increases when you press the space button."
+      },
+
+      {
+        "file": "experiments/flow2.js",
+        "name": "Flow2",
+        "description": "The upgrade here is that the stroke gets a random color and also the background changes color every time the space is pressed."
+      },
+
+      {
+        "file": "experiments/flow3.js",
+        "name": "Flow3",
+        "description": "The upgrade here is that the stroke gets a random color and also the background changes color every time the space is pressed."
+      },
+
+
   {
     "file": "experiments/drone-show.js",
     "name": "Drone show",

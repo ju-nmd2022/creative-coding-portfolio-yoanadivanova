@@ -1,12 +1,12 @@
 function setup() {
   createCanvas(1000, 1000);
-  frameRate(10);
+  frameRate(1);
 }
 
-const size = 15;
+const size = 35;
 const divider = 1;
-const numRows = 70;
-const numCols = 70;
+const numRows = 50;
+const numCols = 50;
 
 let plusSize = true;
 let counter = 0;
@@ -38,5 +38,5 @@ function draw() {
 
   counter += 0.1;
 
-  noLoop();
+  //noLoop();
 }

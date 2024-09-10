@@ -4,7 +4,7 @@ class Agent {
     this.lastPosition = createVector(x, y);
     this.acceleration = createVector(0, 0);
     this.velocity = createVector(0, 0);
-    this.baseMaxSpeed = maxSpeed; // Store base max speed
+    this.newMaxSpeed = maxSpeed; // Store base max speed
     this.maxSpeed = maxSpeed; // Current max speed
     this.maxForce = maxForce;
   }
@@ -106,8 +106,7 @@ function draw() {
     const y = Math.floor(agent.position.y / fieldSize);
     const desiredDirection = field[x][y];
     
-    // Apply speed multiplier
-    agent.maxSpeed = agent.baseMaxSpeed * speedMultiplier;
+    agent.maxSpeed = agent.newMaxSpeed * speedMultiplier;
 
     agent.follow(desiredDirection);
     agent.update();
@@ -115,16 +114,14 @@ function draw() {
     agent.draw();
   }
 }
-
-// Detect when the space key is pressed or released
 function keyPressed() {
   if (key === ' ') {
-    speedMultiplier = 10; // Increase speed significantly when space is pressed
+    speedMultiplier = 10; 
   }
 }
 
 function keyReleased() {
   if (key === ' ') {
-    speedMultiplier = 1; // Reset speed when space is released
+    speedMultiplier = 1; 
   }
 }
