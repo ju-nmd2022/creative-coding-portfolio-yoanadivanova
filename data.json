@@ -73,6 +73,18 @@
       },
 
       {
+        "file": "experiments/noise5.js",
+        "name": "Noise5",
+        "description": "Description"
+      },
+
+      {
+        "file": "experiments/noise6.js",
+        "name": "Noise6",
+        "description": "Use the arrows to move around."
+      },
+
+      {
         "file": "experiments/flow.js",
         "name": "Flow",
         "description": "Press the SPACE button. This is a recreation of the flow fields art. In my variation the speed increases when you press the space button."
@@ -87,9 +99,8 @@
       {
         "file": "experiments/flow3.js",
         "name": "Flow3",
-        "description": "The upgrade here is that the stroke gets a random color and also the background changes color every time the space is pressed."
+        "description": "Description"
       },
-
 
   {
     "file": "experiments/drone-show.js",

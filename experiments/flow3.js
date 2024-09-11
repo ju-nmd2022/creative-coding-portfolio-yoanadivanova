@@ -12,7 +12,7 @@ let spacePressed = false;
 //let synth;
 
 function setup() {
-  createCanvas(650, 650); 
+  createCanvas(innerWidth, innerHeight); 
    
   leftX = int(width * -0.5);   
   rightX = int(width * 1.5);   
