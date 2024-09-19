@@ -1,11 +1,5 @@
   [
-    {
-      "file": "experiments/example.js",
-      "name": "Example experiment",
-      "description": "This is the given example."
-    },
-
-    {
+      {
       "file": "experiments/example2.js",
       "name": "Example2",
       "description": "This variation includes a random color and a random diameter between 20 and 100."
