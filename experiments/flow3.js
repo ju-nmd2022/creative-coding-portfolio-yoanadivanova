@@ -9,10 +9,9 @@ let stepLength = 5;
 let numSteps = 5;
 let x, y;
 let spacePressed = false;
-//let synth;
 
 function setup() {
-  createCanvas(innerWidth, innerHeight); 
+  createCanvas(650, 650); 
    
   leftX = int(width * -0.5);   
   rightX = int(width * 1.5);   
@@ -43,7 +42,6 @@ function setup() {
   x = 100;
   y = 100;
 
-  //synth = new Tone.Synth().toDestination();
 }
 
 function draw() {
@@ -90,7 +88,6 @@ function draw() {
 function keyPressed() {
   if (key === ' ') {
     spacePressed = true;
-    synth.triggerAttackRelease("C4", "2n"); 
   }
 }
 

@@ -81,8 +81,12 @@ function generateField() {
   return field;
 }
 
+let numberOfAgents = 5;
+
 function generateAgents() {
-  for (let i = 0; i < 200; i++) {
+  agents = [];
+
+  for (let i = 0; i < numberOfAgents; i++) {
     let agent = new Agent(
       Math.random() * innerWidth,
       Math.random() * innerHeight,
@@ -120,6 +124,8 @@ function draw() {
 function keyPressed() {
   if (key === ' ') {
     speedMultiplier = 10;
+    numberOfAgents += 5;
+    generateAgents();
     background(random(255), random(255), random(255), random(100, 255));
   }
 }
@@ -127,5 +133,6 @@ function keyPressed() {
 function keyReleased() {
   if (key === ' ') {
     speedMultiplier = 1;
+    //console.log(numberOfAgents);
   }
 }
