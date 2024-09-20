@@ -83,6 +83,10 @@ class Element {
   let windOn = {right: false, left: false, top: false, bottom: false};
   
   function draw() {
+    textSize(25);
+    noStroke();
+    fill(255);
+  text ('Click the mouse to generate elements and then try using the arrow keys.', 100, 100);
     background(40, 40);
   for(let i = 0; i< elements.length; i++) {
     element = elements [i];

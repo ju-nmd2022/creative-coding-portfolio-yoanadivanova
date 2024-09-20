@@ -1,7 +1,5 @@
-let synth;
-
 window.addEventListener("click", () => {
-  synth = new Tone.Synth().toDestination();
+  let synth = new Tone.Synth().toDestination();
   synth.triggerAttackRelease("C4", "8n");
 });
 
@@ -17,6 +15,7 @@ function setup() {
   noiseBackground();
   
 }
+
 let inc = 0.003;
 
 function noiseBackground() {
@@ -58,7 +57,10 @@ function draw() {
   stroke(random(255), random(255), random(255), 180);
   strokeWeight(divider * 0.5);
   point (xLine * divider, yLine * divider);
-
+  
+  let cellX = xLine;
+  let cellY = yLine;
+  
   let direction = floor(random(4));
 
   if (direction === 0) {
@@ -72,11 +74,7 @@ function draw() {
   }
 }
 
-// window.addEventListener ('click', () => {
-//   synth.start();
-// }) ;
-
-// window.addEventListener ('click', () => {
-//   Tone.start();
-// }) ;
-
+function playSound() {
+  let note = random(['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4']); // Random note
+  synth.triggerAttackRelease(note, '8n');
+}

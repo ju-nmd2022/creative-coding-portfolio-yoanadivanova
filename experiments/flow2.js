@@ -106,6 +106,10 @@ let agents = [];
 let speedMultiplier = 2;
 
 function draw() {
+  textSize(25);
+  fill(255);
+  noStroke();
+  text ('Hold the SPACE key.', 100, 100);
   for (let agent of agents) {
     const x = Math.floor(agent.position.x / fieldSize);
     const y = Math.floor(agent.position.y / fieldSize);

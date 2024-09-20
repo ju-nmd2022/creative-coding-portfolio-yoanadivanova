@@ -78,6 +78,9 @@ class Element {
   
   function draw() {
     background(255, 255, 255);
+    textSize(25);
+  noStroke();
+  text ('Click the mouse to generate elements.', 100, 100);
 
   for(let i = 0; i< elements.length; i++) {
     let element = elements [i];

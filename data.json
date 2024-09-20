@@ -1,24 +1,4 @@
-  [
-      {
-      "file": "experiments/example2.js",
-      "name": "Example2",
-      "description": "This variation includes a random color and a random diameter between 20 and 100."
-    },
-
-    {
-      "file": "experiments/example3.js",
-      "name": "Example3",
-      "description": "This example have four circles with certain colors but it makes the diameter grow and then decrese between 10 and 70."
-    },
-
-    {
-      "file": "experiments/example4.js",
-      "name": "Example4",
-      "description": "This example have four circles with random colors but it makes the diameter grow and then decrese between 10 and 70. It also gives a random rotation direction to the elipses. It checks with an if statement if a random number is larger or smaller than 0.5, which is 50%/ 50% chance, and gives it a value of 1 or -1. Then when drawing the elipse, in the rotation I multiply this number by 'frameCount' and that is how I get the direction."
-    },
-
-
-      {
+  [ {
         "file": "experiments/molnar.js",
         "name": "Molnar recreation",
         "description": "This is a recreation of the molar example but I made it that the shape is smaller as the 'i' increases; the variance is also calculated based on the half of the size of each shape."
@@ -118,5 +98,23 @@
         "file": "experiments/noiseSound.js",
         "name": "noise",
         "description": "Describe"
+      },
+
+      {
+        "file": "experiments/example2.js",
+        "name": "Example2",
+        "description": "This variation includes a random color and a random diameter between 20 and 100."
+      },
+  
+      {
+        "file": "experiments/example3.js",
+        "name": "Example3",
+        "description": "This example have four circles with certain colors but it makes the diameter grow and then decrese between 10 and 70."
+      },
+  
+      {
+        "file": "experiments/example4.js",
+        "name": "Example4",
+        "description": "This example have four circles with random colors but it makes the diameter grow and then decrese between 10 and 70. It also gives a random rotation direction to the elipses. It checks with an if statement if a random number is larger or smaller than 0.5, which is 50%/ 50% chance, and gives it a value of 1 or -1. Then when drawing the elipse, in the rotation I multiply this number by 'frameCount' and that is how I get the direction."
       }
 ]

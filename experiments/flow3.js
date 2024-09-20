@@ -45,6 +45,9 @@ function setup() {
 }
 
 function draw() {
+  textSize(25);
+  noStroke();
+  text ('Hold the SPACE key.', 100, 100);
 
   background(255, 10);
   
