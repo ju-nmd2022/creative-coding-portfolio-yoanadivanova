@@ -107,7 +107,7 @@ class Element {
       element.velocity.y *= -1;
     } else if (element.position.y + element.size / 2 > height) {
       element.position.y = height - element.size / 2;
-      element.velocity.y *= -0.8;
+      element.velocity.y *= -1;
     }
     
   }

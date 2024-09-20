@@ -3,7 +3,7 @@ class Element {
       this.position = createVector(x, y);
       this.velocity = this.randomDirection();
       this.acceleration = createVector(0, 0);
-      this.size = 30;
+      this.size = random(15, 35);
       this.mass = random(10, 100);
     }
 
@@ -28,13 +28,14 @@ class Element {
     }
   
     draw() {
-      fill(0, 0, 0);
+      fill(255);
       ellipse(this.position.x, this.position.y, this.size);
+      noStroke();
     }
 
     wallAttraction() {
       let wallForce = createVector(0, 0);
-      let closestWall = Infinity;
+      let closestWall;
 
       let leftWall = this.position.x;
       if (leftWall < closestWall) {
@@ -68,34 +69,36 @@ class Element {
   let elements = [];
   const c = 3;
   const maxElements = 20;
-  let windL;
-  let windR;
+  let windL, windR, windT, windB;
   
   function setup() {
     createCanvas(innerWidth, innerHeight);
     windL = createVector(25, 0);
     windR = createVector(-25, 0);
+    windT = createVector(0, 25);
+    windB = createVector(0, -25);
   }
 
   let element;
-  let windToRight = false;
-  let windToLeft = false;
-  let windToTop = false;
-  let windToBottom = false;
+  let windOn = {right: false, left: false, top: false, bottom: false};
   
   function draw() {
-    background(255, 255, 255);
-
+    background(40, 40);
   for(let i = 0; i< elements.length; i++) {
     element = elements [i];
     
-    if (windToRight) {
+    if (windOn.right) {
        element.applyForce(windL);
     }
-
-    if (windToLeft) {
+    if (windOn.left) {
       element.applyForce(windR);
    }
+   if (windOn.top) {
+    element.applyForce(windB);
+  }
+ if (windOn.bottom) {
+   element.applyForce(windT);
+  }
 
     element.wallAttraction();
     element.update();
@@ -127,27 +130,27 @@ class Element {
       elements.shift();
     }
   }
-
+  
   function keyPressed () {
       if (key === 'ArrowRight') {
-        windToRight = true;
+        windOn.right = true;
+      } else if (key === 'ArrowLeft') {
+        windOn.left = true;
+      } else if (key === 'ArrowUp') {
+        windOn.top = true;
+      } else if (key === 'ArrowDown') {
+        windOn.bottom = true;
       }
     }
   
     function keyReleased () {
       if (key === 'ArrowRight') {
-        windToRight = false;
-      }
-    }
-
-    function keyPressed () {
-      if (key === 'ArrowLeft') {
-        windToLeft = true;
-      }
-    }
-  
-    function keyReleased () {
-      if (key === 'ArrowLeft') {
-        windToLeft = false;
+        windOn.right = false;
+      } else if (key === 'ArrowLeft') {
+        windOn.left = false;
+      } else if (key === 'ArrowUp') {
+        windOn.top = false;
+      } else if (key === 'ArrowDown') {
+        windOn.bottom = false;
       }
     }

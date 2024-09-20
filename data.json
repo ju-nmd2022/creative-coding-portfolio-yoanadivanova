@@ -94,5 +94,29 @@
         "file": "experiments/flow3.js",
         "name": "Flow3",
         "description": "Click SPACE to change the colors to achromatic."
+      },
+
+      {
+        "file": "experiments/force.js",
+        "name": "Force",
+        "description": "Describe"
+      },
+
+      {
+        "file": "experiments/force2.js",
+        "name": "Force2",
+        "description": "Describe"
+      },
+
+      {
+        "file": "experiments/vectors.js",
+        "name": "Vectors",
+        "description": "Describe"
+      },
+
+      {
+        "file": "experiments/noiseSound.js",
+        "name": "noise",
+        "description": "Describe"
       }
 ]
