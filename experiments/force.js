@@ -80,7 +80,7 @@ class Element {
     background(255, 255, 255);
     textSize(25);
   noStroke();
-  text ('Click the mouse to generate elements.', 100, 100);
+  text ('Click the mouse to generate elements.', 50, 100);
 
   for(let i = 0; i< elements.length; i++) {
     let element = elements [i];

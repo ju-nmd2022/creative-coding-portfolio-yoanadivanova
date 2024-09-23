@@ -51,7 +51,7 @@ function setup() {
 function draw() {
   textSize(25);
   noStroke();
-  text ('Use the arrows to move arround', 100, 100);
+  text ('Use the arrows to move arround', 50, 100);
   stroke(random(255), random(255), random(255), 180);
   strokeWeight(divider * 0.5);
   point (xLine * divider, yLine * divider);

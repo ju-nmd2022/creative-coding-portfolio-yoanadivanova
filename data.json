@@ -116,5 +116,11 @@
         "file": "experiments/example4.js",
         "name": "Example4",
         "description": "This example have four circles with random colors but it makes the diameter grow and then decrese between 10 and 70. It also gives a random rotation direction to the elipses. It checks with an if statement if a random number is larger or smaller than 0.5, which is 50%/ 50% chance, and gives it a value of 1 or -1. Then when drawing the elipse, in the rotation I multiply this number by 'frameCount' and that is how I get the direction."
+      },
+
+      {
+        "file": "experiments/dotSound.js",
+        "name": "My first Tone.js example",
+        "description": "A dot is moving around a grid and it generates a random note when it enters another cell of the grid."
       }
 ]

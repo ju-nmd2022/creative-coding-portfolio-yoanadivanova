@@ -86,7 +86,7 @@ class Element {
     textSize(25);
     noStroke();
     fill(255);
-  text ('Click the mouse to generate elements and then try using the arrow keys.', 100, 100);
+  text ('Click the mouse to generate elements and then try using the arrow keys.', 50, 100);
     background(40, 40);
   for(let i = 0; i< elements.length; i++) {
     element = elements [i];

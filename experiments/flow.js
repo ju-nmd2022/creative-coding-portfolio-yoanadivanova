@@ -49,7 +49,8 @@ class Agent {
 
   draw() {
     textSize(25);
-  text ('Hold the SPACE key.', 100, 100);
+    fill(255, 0, 0);
+  text ('Hold the SPACE key.', 50, 100);
     push();
     strokeWeight(1);
     line(
